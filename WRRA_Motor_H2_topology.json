@@ -1,0 +1,67 @@
+{
+  "candidate_id": "H2-b2f820d18e",
+  "assembly_hypothesis": "parallel homodimer of two identical 385-aa chains",
+  "chains": [
+    {
+      "chain": "A",
+      "length_aa": 385,
+      "regions": [
+        {
+          "residues": "1-328",
+          "role": "motor and polar-track-binding core",
+          "ownership": "INHERITED"
+        },
+        {
+          "residues": "329-353",
+          "role": "neck/coupling junction",
+          "ownership": "INHERITED"
+        },
+        {
+          "residues": "354-385",
+          "role": "designed dimeric gate",
+          "ownership": "DESIGNED"
+        }
+      ]
+    },
+    {
+      "chain": "B",
+      "length_aa": 385,
+      "regions": [
+        {
+          "residues": "1-328",
+          "role": "motor and polar-track-binding core",
+          "ownership": "INHERITED"
+        },
+        {
+          "residues": "329-353",
+          "role": "neck/coupling junction",
+          "ownership": "INHERITED"
+        },
+        {
+          "residues": "354-385",
+          "role": "designed dimeric gate",
+          "ownership": "DESIGNED"
+        }
+      ]
+    }
+  ],
+  "state_cycle_hypothesis": [
+    {
+      "state": "S0",
+      "contact_A": "bound-rear",
+      "contact_B": "bound-front"
+    },
+    {
+      "state": "S1",
+      "contact_A": "mobile",
+      "contact_B": "bound-anchor"
+    },
+    {
+      "state": "S2",
+      "contact_A": "bound-new-front",
+      "contact_B": "bound-rear"
+    }
+  ],
+  "atomic_coordinates": "OPEN_NOT_PREDICTED",
+  "claim": "TOPOLOGY_HYPOTHESIS_ONLY"
+}

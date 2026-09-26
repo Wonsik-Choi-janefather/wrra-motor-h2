@@ -1,0 +1,14 @@
+WRRA-Motor H2 uses a dual-license structure.
+
+1. Source code
+
+The Python source code is licensed under the MIT License. See LICENSE-CODE.
+
+2. Research documents and data
+
+Reports, notes, YAML and JSON files, FASTA sequence files, figures, and other
+research data are licensed under the Creative Commons Attribution 4.0
+International License. See LICENSE-DOCUMENTATION.md.
+
+Copyright (c) 2026 Wonsik Choi.
+

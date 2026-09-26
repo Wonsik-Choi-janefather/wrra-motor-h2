@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this research package, please cite it as below."
+title: "WRRA-Motor H2: From Minimal State Transitions to a Candidate Walking Protein and DNA"
+type: software
+version: "0.4"
+date-released: 2026-09-08
+authors:
+  - family-names: Choi
+    given-names: Wonsik
+    email: janefather@gmail.com
+repository-code: "https://github.com/Wonsik-Choi-janefather/wrra-motor-h2"
+license: MIT
+keywords:
+  - WRRA
+  - minimal computation
+  - protein design
+  - kinesin
+  - molecular motor
+  - sequence design
+  - DNA reverse translation
+  - reproducible research
+abstract: >-
+  A reproducible WRRA Core 1.0 application that derives a strict two-contact
+  walking architecture and maps it to H2-b2f820d18e, a 385-aa hybrid candidate
+  comprising KIF5B residues 1-353 and a designed 32-aa gate. The package emits
+  a 1,158-nt candidate CDS, provenance ledgers, deterministic renderer outputs,
+  and explicit falsification conditions. Physical walking remains open.
+

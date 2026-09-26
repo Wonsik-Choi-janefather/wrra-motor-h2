@@ -1,0 +1,88 @@
+profile:
+  name: WRRA-Motor
+  version: "0.1"
+  core: "WRRA Core 1.0 (frozen)"
+  status: architecture-model
+
+scope:
+  question: "What is the minimum architecture for directional, processive intracellular walking?"
+  excluded_from_blind_derivation:
+    - kinesin sequences
+    - dynein sequences
+    - myosin sequences
+    - fitted natural-motor rate constants
+
+SOURCE:
+  chemical_free_energy: "dimensionless cycle affinity, supplied externally"
+
+RELATION_LAW:
+  - local_detailed_balance
+  - polar_discrete_track
+  - binding_and_release
+  - finite_thermal_detachment_risk
+
+STATE_RESIDUE:
+  present_only:
+    - contact_bound_state
+    - energy_carrier_occupancy
+    - elastic_or_conformational_strain
+  forbidden:
+    - uninstantiated_history
+
+BOUNDARY:
+  - cytosolic_thermal_noise
+  - polar_track
+  - finite_load
+  - finite_energy_supply
+
+COMMON_CARRIER:
+  carrier: "protein conformational transition"
+  preserves_channel_identity: true
+
+UPDATE:
+  affinity: "A = (chemical input - load work) / kBT"
+  forward_probability: "p_plus = 1 / (1 + exp(-A))"
+  mean_step: "E[dx] = d * tanh(A/2)"
+
+RENDERER_PHENOTYPE:
+  renderer: "binding geometry plus conformational coupling"
+  phenotype: "net directional displacement on the track"
+
+OBSERVABLE_LEDGER:
+  observables:
+    - displacement_per_cycle
+    - detachment_probability
+    - survival_over_N_steps
+    - energy_inputs_per_cycle
+    - contact_count
+  claim_classes:
+    EXACT:
+      - "zero cycle affinity gives zero current in the declared two-outcome model"
+    CONDITIONAL:
+      - "two contacts are minimal under the strict always-attached discrete-step contract"
+      - "n-contact protection scales as q^n in the declared independent-exposure model"
+    OPEN:
+      - fold_selection
+      - amino_acid_sequence
+      - DNA_sequence
+      - cellular_expression
+      - experimental_motility
+
+minimum_viability_contract:
+  directionality: "expected displacement per cycle > 0"
+  strict_processivity: "at least one contact remains track-bound during exchange"
+  finite_cost: "finite energy input and finite architecture"
+  fail_closed: "failed contract is not reported as a walking protein"
+
+minimum_architecture_hypothesis:
+  contacts: 2
+  driven_nonequilibrium_cycle: true
+  polar_coupling: true
+  present_state_record: true
+  coordination: true
+
+failure_conditions:
+  - no_energy_drive
+  - no_spatial_or_internal_asymmetry
+  - no_present_state_coordination
+  - complete_detachment_under_strict_contract

@@ -1,0 +1,145 @@
+{
+  "renderer": {
+    "name": "WRRA-Motor Protein Renderer",
+    "version": "0.3",
+    "core": "WRRA Core 1.0 (frozen)",
+    "mode": "hybrid scaffold search with fail-closed de novo boundary",
+    "seed": 260908
+  },
+  "calibration": {
+    "H1_length": 382,
+    "inherited_core_length": 353,
+    "GCN4_length": 29,
+    "status": "CALIBRATION_NOT_NOVEL"
+  },
+  "search_summary": {
+    "generated_and_passed": 512,
+    "reported": 5,
+    "top_candidate": "H2-b2f820d18e"
+  },
+  "top_candidates": [
+    {
+      "candidate_id": "H2-b2f820d18e",
+      "gate_sequence": "VQNIEQKIANLKEEGAAALQQVEQKIQNLKAE",
+      "protein_length": 385,
+      "metrics": {
+        "core_fraction": 1.0,
+        "salt_fraction": 1.0,
+        "proline_free": true,
+        "charge_density": 0.28125,
+        "maximum_hydrophobic_window": 0.5555555555555556,
+        "normalized_entropy": 0.7014106277521636,
+        "switch_proxy": 1.0,
+        "heuristic_score": 5.080564251100865,
+        "has_declared_hinge": true
+      },
+      "ownership": {
+        "residues_1_353": "INHERITED_KIF5B_P33176",
+        "residues_354_385": "DESIGNED_HEPTAD_GATE"
+      },
+      "claim": "PREDICTED_SEQUENCE_ONLY"
+    },
+    {
+      "candidate_id": "H2-f269faa25e",
+      "gate_sequence": "LKNVEQKLQNVKQEGAAAVANIEEKIANVKKE",
+      "protein_length": 385,
+      "metrics": {
+        "core_fraction": 1.0,
+        "salt_fraction": 1.0,
+        "proline_free": true,
+        "charge_density": 0.34375,
+        "maximum_hydrophobic_window": 0.6666666666666666,
+        "normalized_entropy": 0.6978660220163797,
+        "switch_proxy": 1.0,
+        "heuristic_score": 5.079146408806552,
+        "has_declared_hinge": true
+      },
+      "ownership": {
+        "residues_1_353": "INHERITED_KIF5B_P33176",
+        "residues_354_385": "DESIGNED_HEPTAD_GATE"
+      },
+      "claim": "PREDICTED_SEQUENCE_ONLY"
+    },
+    {
+      "candidate_id": "H2-591dfb47bf",
+      "gate_sequence": "IQQLEQKVANIKKEGAAAIENLEQKVQQVKAE",
+      "protein_length": 385,
+      "metrics": {
+        "core_fraction": 1.0,
+        "salt_fraction": 1.0,
+        "proline_free": true,
+        "charge_density": 0.3125,
+        "maximum_hydrophobic_window": 0.5555555555555556,
+        "normalized_entropy": 0.6952302772703637,
+        "switch_proxy": 1.0,
+        "heuristic_score": 5.078092110908146,
+        "has_declared_hinge": true
+      },
+      "ownership": {
+        "residues_1_353": "INHERITED_KIF5B_P33176",
+        "residues_354_385": "DESIGNED_HEPTAD_GATE"
+      },
+      "claim": "PREDICTED_SEQUENCE_ONLY"
+    },
+    {
+      "candidate_id": "H2-a78ecc5089",
+      "gate_sequence": "IQNIEKKVQQVKAEGAAAIENLEQKVAELKQE",
+      "protein_length": 385,
+      "metrics": {
+        "core_fraction": 1.0,
+        "salt_fraction": 1.0,
+        "proline_free": true,
+        "charge_density": 0.34375,
+        "maximum_hydrophobic_window": 0.6666666666666666,
+        "normalized_entropy": 0.6952302772703637,
+        "switch_proxy": 1.0,
+        "heuristic_score": 5.078092110908146,
+        "has_declared_hinge": true
+      },
+      "ownership": {
+        "residues_1_353": "INHERITED_KIF5B_P33176",
+        "residues_354_385": "DESIGNED_HEPTAD_GATE"
+      },
+      "claim": "PREDICTED_SEQUENCE_ONLY"
+    },
+    {
+      "candidate_id": "H2-5bcdbf0c88",
+      "gate_sequence": "LQNIEQKIANVKEEGAAAIQNVEEKIAALKKE",
+      "protein_length": 385,
+      "metrics": {
+        "core_fraction": 1.0,
+        "salt_fraction": 1.0,
+        "proline_free": true,
+        "charge_density": 0.34375,
+        "maximum_hydrophobic_window": 0.5555555555555556,
+        "normalized_entropy": 0.6931298399114786,
+        "switch_proxy": 1.0,
+        "heuristic_score": 5.077251935964592,
+        "has_declared_hinge": true
+      },
+      "ownership": {
+        "residues_1_353": "INHERITED_KIF5B_P33176",
+        "residues_354_385": "DESIGNED_HEPTAD_GATE"
+      },
+      "claim": "PREDICTED_SEQUENCE_ONLY"
+    }
+  ],
+  "top_DNA": {
+    "candidate_id": "H2-b2f820d18e",
+    "coding_nt_including_stop": 1158,
+    "GC_fraction": 0.5768566493955095,
+    "longest_homopolymer": 4,
+    "forbidden_sites_present": [],
+    "status": "PREDICTED_NOT_SYNTHESIS_READY"
+  },
+  "N1_fully_de_novo": {
+    "status": "FAIL_CLOSED_NO_SEQUENCE_EMITTED",
+    "missing_validators": [
+      "de_novo ATPase and track-binding backbone generator",
+      "multistate complex structure prediction",
+      "ATP-state free-energy calculation",
+      "microtubule-bound mechanochemical-cycle simulation",
+      "experimental expression and single-molecule motility"
+    ]
+  }
+}
