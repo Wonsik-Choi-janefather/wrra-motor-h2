@@ -7,6 +7,7 @@ date-released: 2026-09-08
 authors:
   - family-names: Choi
     given-names: Wonsik
+    orcid: "https://orcid.org/0009-0001-4263-9772"
     email: janefather@gmail.com
 repository-code: "https://github.com/Wonsik-Choi-janefather/wrra-motor-h2"
 license: MIT
